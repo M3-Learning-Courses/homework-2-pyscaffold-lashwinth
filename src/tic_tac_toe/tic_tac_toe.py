@@ -47,7 +47,7 @@ class TicTacToe:
         make_move(1, 2)  # Places the current player's symbol in the cell at row 1, column 2.
         make_move(0, 0)  # Raises a ValueError if the cell at row 0, column 0 is already occupied.
 
-    """
+        """
         if self.board[row][col] == ' ':
             # If the specified cell is empty, place the current player's symbol.
             self.board[row][col] = self.current_player
@@ -70,7 +70,7 @@ class TicTacToe:
         if check_winner():
             print(f"Player {self.current_player} wins!")
 
-    """
+        """
         # Check for a horizontal win: all cells in a row contain the current player's symbol.
         for row in self.board:
             if all(cell == self.current_player for cell in row):
@@ -105,7 +105,7 @@ class TicTacToe:
         if is_board_full():
             print("It's a draw!")
     
-    """
+        """
         # Use a list comprehension to check if there are no empty spaces (' ') in the entire board.
         # If all cells are filled, it means the board is full, and the game is a draw.
         return all(cell != ' ' for row in self.board for cell in row)
@@ -123,7 +123,7 @@ class TicTacToe:
         game = TicTacToe()
         game.play_game()
     
-    """
+        """
         while True:
             self.print_board() # Display the current state of the game board
             try:

@@ -26,7 +26,7 @@ class TestTicTacToe(unittest.TestCase):
         This test case captures the printed output of the 'print_board' method and compares it with the
         expected output to verify that the method correctly displays the Tic-Tac-Toe game board.
     
-    """
+        """
         # Capture the standard output (print) to a StringIO buffer for testing.
         captured_output = StringIO()
         sys.stdout = captured_output
@@ -50,7 +50,7 @@ class TestTicTacToe(unittest.TestCase):
         This test case checks the behavior of the 'make_move' method by making valid and invalid moves and
         verifying that the board is updated correctly and that it raises an exception for an invalid move.
 
-    """
+        """
         # Make a valid move for 'X' at row 0, column 0.
         self.game.make_move(0, 0)
 
@@ -70,7 +70,7 @@ class TestTicTacToe(unittest.TestCase):
         This test case checks the 'check_winner' method for various winning scenarios.
         It sets up different board configurations where 'X' or 'O' wins and verifies that the method returns True.
 
-    """
+        """
         # Test case 1: 'X' wins horizontally in the top row.
         self.game.board = [['X', 'X', 'X'], [' ', ' ', 'O'], ['O', ' ', ' ']]
         self.assertTrue(self.game.check_winner())
@@ -92,7 +92,7 @@ class TestTicTacToe(unittest.TestCase):
         This test case checks the 'is_board_full' method for two different board configurations:
         one where the board is full (a draw) and another where there are still empty spaces.
         It verifies that the method returns True for a full board and False otherwise.
-    """
+        """
         # Test case 1: A full board (a draw) with no empty spaces.
         self.game.board = [['X', 'O', 'X'], ['O', 'X', 'O'], ['O', 'X', 'X']]
         self.assertTrue(self.game.is_board_full())
@@ -108,7 +108,7 @@ class TestTicTacToe(unittest.TestCase):
         Test the 'play_game' method of the TicTacToe class.
         This test case simulates a game where 'X' wins and verifies that the game outcome matches the expected output.
     
-    """
+        """
         # Simulate a game where 'X' wins
         user_inputs = ['0 0', '0 1', '1 0', '1 1', '2 0']
 
