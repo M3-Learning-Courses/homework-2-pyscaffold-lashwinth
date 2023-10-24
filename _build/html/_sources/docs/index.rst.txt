@@ -30,10 +30,10 @@ Contents
    :maxdepth: 2
 
    Overview <readme>
-   Contributions & Help <CONTRIBUTING>
+   Contributions & Help <contributing>
    License <license>
    Authors <authors>
-   Changelog <Changelog>
+   Changelog <changelog>
    Module Reference <api/modules>
 
 
